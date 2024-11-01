@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N;
+
+    // Determine the number of digits in N and print the required leading zeros
+    if (N < 10)
+    {
+        cout << "000" << N << endl;
+    }
+    else if (N < 100)
+    {
+        cout << "00" << N << endl;
+    }
+    else if (N < 1000)
+    {
+        cout << "0" << N << endl;
+    }
+    else
+    {
+        cout << N << endl;
+    }
+
+    return 0;
+}
